@@ -1,0 +1,37 @@
+body { background: #D8D8D8; font-family: Helvetica; color: #666; }
+.header, .footer, h1, h2, h3 { text-shadow: 1px 1px 1px white; }
+.header, .footer, .container { width: 960px; margin: 2em auto; }
+.header, .footer { text-align: center; }
+
+.container { padding: 1em; background: #CCC; 
+  -webkit-background-clip: padding-box; /* fix WebKit background bleed on border-radius */
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+      -ms-border-radius: 6px;
+          border-radius: 6px;
+
+  -webkit-box-shadow: 1px 1px 1px 0px #BBB;
+     -moz-box-shadow: 1px 1px 1px 0px #BBB;
+          box-shadow: 1px 1px 1px 0px #BBB;
+}
+
+.checkboxes { width: 60%; margin: 0 auto; }
+
+.box {
+  -webkit-background-clip: padding-box; /* fix WebKit background bleed on border-radius */
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-box-shadow: inset 0px 1px 1px 0px #858585;
+   -moz-box-shadow: inset 0px 1px 1px 0px #858585;
+        box-shadow: inset 0px 1px 1px 0px #858585;
+  border-bottom: 1px solid #DBDBDB;
+  background: #A3A3A3; color: #363636;
+}
+
+pre { padding: .5em; }
+
+.result { width: 80px; height: 30px; margin: 1em; line-height: 30px; padding-left: 20px; text-shadow: 1px 1px 1px #DBDBDB; }
+
+.result-wrap { width: 100%; }

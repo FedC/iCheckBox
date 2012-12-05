@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="author" content="Federico Commisso">
+    <meta name="description" content="iCheckBox sample page" />
+
+    <title>iCheckBox.js</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
+
+    <link href="screen.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="iCheckBox.css" media="screen" rel="stylesheet" type="text/css" />
+
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="jQuery.iCheckBox.js"></script>
+  </head>
+
+  <body>
+    
+    <div class="header">
+      <h1> iCheckBox.js </h1>
+    </div>
+
+    <div class='container'>
+
+      <div class="checkboxes">
+
+        <pre class="box">
+          $('#ch-1').iCheckBox( {
+            Default: 'Yay'
+          });
+        </pre>
+
+        <div id="ch-1"></div>
+
+
+        <pre class="box">
+          $('#ch-1').iCheckBox( {
+            Yay: 'Foo',
+            Nay: 'Bar',
+            Default: 'Nay',
+            ON: function() { $('#result').html("it's FOO"); },
+            OFF: function() { $('#result').html("it's BAR"); }
+          });
+        </pre>
+
+        <div class="result-wrap">
+          <div id="ch-2" class="push-left"></div>
+          <div id="result" class="result box">Result</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer"> <a href="https://github.com/fman7/iCheckBox"> iCheckBox </a> by Federico Commisso</div>
+
+  
+  </body>
+
+  <script type="text/javascript">
+    $('#ch-1').iCheckBox( {
+      Default: 'Yay'
+    });
+
+    $('#ch-2').iCheckBox( {
+      Yay: 'Foo',
+      Nay: 'Bar',
+      Default: 'Nay',
+      ON: function() { $('#result').html("It's FOO"); },
+      OFF: function() { $('#result').html("It's BAR"); }
+    });
+  </script>
+
+ </html>
