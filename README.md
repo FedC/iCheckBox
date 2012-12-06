@@ -11,7 +11,7 @@ Feel free to modify this code, branch, pull, push any changes that you think mig
 
 ## Working example:
 
-= http://creatrixelit.com/icheckbox/
+* http://creatrixelit.com/icheckbox/
 
 
 ## Simple use-case: $(container).iCheckBox()
