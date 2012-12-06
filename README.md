@@ -9,6 +9,11 @@ setting.
 
 Feel free to modify this code, branch, pull, push any changes that you think might benefit the plugin and help it grow.
 
+## Working example:
+
+= http://creatrixelit.com/icheckbox/
+
+
 ## Simple use-case: $(container).iCheckBox()
 
 Write some markup like:
