@@ -1,11 +1,13 @@
 .fm-checkbox { width: 60px; height: 22px; position: relative; overflow: hidden; cursor: pointer;}
 .fm-filler { width: 100%; height: 100%; background: url('images/checkbox_blank.png'); background-repeat: no-repeat; 
-  background-position-x: 0px; background-position-y: 50%;   
+  background-position: 0px 50%; 
    -webkit-background-clip: padding-box; /* fix WebKit background bleed on border-radius */
     -webkit-border-radius: 10px;
        -moz-border-radius: 10px;
         -ms-border-radius: 10px;
             border-radius: 10px;
+  /* Mozilla doesn't animate background position - so force with css */
+  -moz-transition: all .2s ease-in-out;
 }
 .fm-nob { position: absolute; top: 5; right: 50; width: 24px; height: 22px; 
   background: url('images/nob.png') no-repeat;
