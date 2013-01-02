@@ -6,8 +6,10 @@
        -moz-border-radius: 10px;
         -ms-border-radius: 10px;
             border-radius: 10px;
-  /* Mozilla doesn't animate background position - so force with css */
-  -moz-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+   -moz-transition: all .2s ease-in-out;
+     -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
 }
 .fm-nob { position: absolute; top: 5; right: 50; width: 24px; height: 22px; 
   background: url('images/nob.png') no-repeat;

@@ -18,11 +18,8 @@
     },
     slideLeft: function( params ) {
       $(this).find('.fm-nob').stop().animate({ 'right' : '36px' }, 'fast');
-      $(this).find('.fm-filler').stop().animate({ 'background-position': '95% 50%' }, 'fast');
-      // firefox doesn't seem to understand animation of background pos, so force the css
-      if ($.browser.mozilla ){
-        $(this).find('.fm-filler').css({ 'background-position': '95% 50%' });
-      }
+      $(this).find('.fm-filler').css({ 'background-position': '95% 50%' });
+      
       $(this).find('.fm-left-label').stop().animate({'left' : '-36px'}, 'fast', function() {
         $(this).hide();
       });
@@ -31,11 +28,8 @@
 
     slideRight: function ( params ) {
       $(this).find('.fm-nob').stop().animate({ 'right' : '-2px' }, 'fast');
-      $(this).find('.fm-filler').stop().animate({ 'background-position': '5% 50%' }, 'fast')
-      // force css
-      if ($.browser.mozilla ) {
-        $(this).find('.fm-filler').css({ 'background-position': '5% 50%' });
-      }
+      $(this).find('.fm-filler').css({ 'background-position': '5% 50%' });
+      
       $(this).find('.fm-right-label').stop().animate({'left' : '36px'}, 'fast', function() {
         $(this).hide();
       });
