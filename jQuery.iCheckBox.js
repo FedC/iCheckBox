@@ -6,19 +6,19 @@
       if( params.Default == 'Nay' ) {
         obj.find('.fm-checkbox').data('icheckbox-value', params.Nay);
         obj.find('.fm-nob').css({ 'right' : '36px'});
-        obj.find('.fm-filler').css({ 'background-position-x' : '95%' })
+        obj.find('.fm-filler').css({ 'background-position-x' : '-40px' })
         obj.find('.fm-left-label').hide();
       }
       if( params.Default == 'Yay' ) {
         obj.find('.fm-checkbox').data('icheckbox-value', params.Yay);
         obj.find('.fm-nob').css({ 'right' : '-2px'});
-        obj.find('.fm-filler').css({ 'background-position-x' : '5%' })
+        obj.find('.fm-filler').css({ 'background-position-x' : '0px' })
         obj.find('.fm-right-label').hide();
       }
     },
     slideLeft: function( params ) {
       $(this).find('.fm-nob').stop().animate({ 'right' : '36px' }, 'fast');
-      $(this).find('.fm-filler').stop().animate({ 'background-position-x': '95%' }, 'fast');
+      $(this).find('.fm-filler').stop().animate({ 'background-position-x': '-40px' }, 'fast');
       $(this).find('.fm-left-label').stop().animate({'left' : '-36px'}, 'fast', function() {
         $(this).hide();
       });
@@ -27,7 +27,7 @@
 
     slideRight: function ( params ) {
       $(this).find('.fm-nob').stop().animate({ 'right' : '-2px' }, 'fast');
-      $(this).find('.fm-filler').stop().animate({ 'background-position-x': '5%' }, 'fast');
+      $(this).find('.fm-filler').stop().animate({ 'background-position-x': '0px' }, 'fast');
       $(this).find('.fm-right-label').stop().animate({'left' : '36px'}, 'fast', function() {
         $(this).hide();
       });
