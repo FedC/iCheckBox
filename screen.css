@@ -33,6 +33,6 @@ body { background: #D8D8D8; font-family: Helvetica; color: #666; }
 
 pre { padding: .5em; }
 
-.result { width: 80px; height: 30px; margin: 1em; line-height: 30px; padding-left: 20px; text-shadow: 1px 1px 1px #DBDBDB; }
+.result { width: 80px; height: 30px; margin: 1em 0; line-height: 30px; padding-left: 20px; text-shadow: 1px 1px 1px #DBDBDB; }
 
 .result-wrap { width: 100%; }
