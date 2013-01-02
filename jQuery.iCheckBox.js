@@ -17,21 +17,21 @@
       }
     },
     slideLeft: function( params ) {
-      $(this).find('.fm-nob').stop().animate({ 'right' : '36px' });
-      $(this).find('.fm-filler').stop().animate({ 'background-position-x': '95%' });
-      $(this).find('.fm-left-label').stop().animate({'left' : '-36px'}, function() {
+      $(this).find('.fm-nob').stop().animate({ 'right' : '36px' }, 'fast');
+      $(this).find('.fm-filler').stop().animate({ 'background-position-x': '95%' }, 'fast');
+      $(this).find('.fm-left-label').stop().animate({'left' : '-36px'}, 'fast', function() {
         $(this).hide();
       });
-      $(this).find('.fm-right-label').css({'left':'36px'}).show().stop().animate({'left' : '0px'});
+      $(this).find('.fm-right-label').css({'left':'36px'}).show().stop().animate({'left' : '0px'}, 'fast');
     },
 
     slideRight: function ( params ) {
-      $(this).find('.fm-nob').stop().animate({ 'right' : '-2px' });
-      $(this).find('.fm-filler').stop().animate({ 'background-position-x': '5%' });
-      $(this).find('.fm-right-label').stop().animate({'left' : '36px'}, function() {
+      $(this).find('.fm-nob').stop().animate({ 'right' : '-2px' }, 'fast');
+      $(this).find('.fm-filler').stop().animate({ 'background-position-x': '5%' }, 'fast');
+      $(this).find('.fm-right-label').stop().animate({'left' : '36px'}, 'fast', function() {
         $(this).hide();
       });
-      $(this).find('.fm-left-label').css({'left':'-36px'}).show().stop().animate({'left' : '0px'});
+      $(this).find('.fm-left-label').css({'left':'-36px'}).show().stop().animate({'left' : '0px'}, 'fast');
     }
 
   };
